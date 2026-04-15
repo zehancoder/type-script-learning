@@ -185,3 +185,17 @@ class Shery{
    static version = 1.0
 }
 Shery.version = 2; /// static korar pole instance banano charai oigula ke access and change kora jacceh
+
+
+// abstrack
+// jei shob product a commonly use hobe oitake amra abstract bole
+class Gas{
+  constructor(protected unit: number, public name: string){
+
+  }
+}
+class SharifGas extends Gas{
+  super(){
+    console.log(this.unit = 2)
+  }
+}
